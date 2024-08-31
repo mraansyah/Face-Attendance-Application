@@ -1,0 +1,20 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+
+<AbsenMasuk>:
+    MDRelativeLayout:
+        md_bg_color: get_color_from_hex("#4A4671")
+
+        MDFlatButton:
+            text: 'HOME'
+            on_release: app.change_screen2('home_page')
+            pos_hint: {'top': 1, 'left': 0}
+            theme_text_color: 'Custom'
+            text_color: 1, 1, 1, 1
+
+        
+        MDFillRoundFlatButton:
+            text: "SILAHKAN ABSEN"
+            md_bg_color: "white"
+            text_color: "green"
+            pos_hint: {"center_x": .5, "center_y": .5}
+            on_release: app.go_to_face_attendance()

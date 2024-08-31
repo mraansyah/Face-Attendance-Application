@@ -1,0 +1,12 @@
+#:import get_color_from_hex kivy.utils.get_color_from_hex
+
+<AbsenKeluar>:
+    MDRelativeLayout:
+        md_bg_color: get_color_from_hex("#B02A8F")
+
+        MDFlatButton:
+            text: 'HOME'
+            on_release: app.change_screen2('home_page')
+            pos_hint: {'top': 1, 'left': 0}
+            theme_text_color: 'Custom'
+            text_color: 1, 1, 1, 1
