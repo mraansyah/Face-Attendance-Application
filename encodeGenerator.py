@@ -9,8 +9,8 @@ from firebase_admin import storage
 
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred,{
-    'databaseURL': "https://presensikaryawan-bcb5b-default-rtdb.firebaseio.com/",
-    'storageBucket': "presensikaryawan-bcb5b.appspot.com"
+    'databaseURL': "",
+    'storageBucket': ""
 })
 
 folderPath = 'attendances'
